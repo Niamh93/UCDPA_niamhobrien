@@ -17,3 +17,22 @@ print(movies['IMDb'].min())
 print(movies['IMDb'].max())
 print(movies['IMDb'].value_counts())
 
+
+movies['IMDb']=movies['IMDb'].fillna(movies['IMDb'].median())
+print(movies.info())
+print(movies['IMDb'].mean())
+
+Netflix=movies[movies['Netflix']==1]
+print(Netflix.info())
+
+Hulu=movies[movies['Hulu']==1]
+print(Hulu.info())
+
+Prime=movies[movies['Prime Video']==1]
+print(Prime.info())
+
+Disney=movies[movies['Disney+']==1]
+print(Disney.info())
+
+
+
