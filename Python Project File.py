@@ -65,7 +65,7 @@ plt.show()
 
 #plot showing the number of movies per year
 fig,ax=plt.subplots()
-ax.hist(movies['Year'],bins=20)
+ax.hist(movies['Year'],bins=60)
 ax.set_xlabel('Number of Movies')
 ax.set_ylabel('Year')
 fig.suptitle('Movies per Year')
